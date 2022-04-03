@@ -7,11 +7,13 @@ public class PokeClient
 
     public PokeClient(HttpClient httpClient) => this.client = httpClient;
 
-    public async Task<Option<Pokemon>> GetPokemonAsync(PokemonName name) => 
-        await client.GetFromJsonAsync<Pokemon>($"{baseUrl}/pokemon/{name.Value}") 
-        switch
-        {
-            null => None,
-            var pokemon => Some(pokemon),
-        };
+    public async Task<Option<Pokemon>> GetPokemonAsync(PokemonName name)
+    {
+        var fetch = () => client.GetFromJsonAsync<Pokemon>($"{baseUrl}/pokemon/{name.Value}");
+        var result = await TryAsync(fetch);
+        return result.Match(
+            Succ: pokemon => Some(pokemon),
+            Fail: None
+        );
+    }
 }
