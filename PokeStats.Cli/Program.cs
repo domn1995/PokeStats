@@ -2,7 +2,7 @@
 
 PokeClient client = new PokeClient(new HttpClient());
 
-const string input = "squirtle, bulbasaur,,,   ,pikachu, ditto,        charmander, invalid,";
+const string input = "squirtle, bulbasaur,,,   ,pikachu, ditto,        charmander, ,";
 
 var fetchPokemon = async (PokemonName pokemonName) =>
 {
