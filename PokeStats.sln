@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeStats.Lib", "PokeStats.Lib\PokeStats.Lib.csproj", "{300C4166-92EC-4D5F-9731-6B49309294FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeStats.Lib", "PokeStats.Lib\PokeStats.Lib.csproj", "{300C4166-92EC-4D5F-9731-6B49309294FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeStats.Test", "PokeStats.Test\PokeStats.Test.csproj", "{085BEB50-C88E-43D9-AFDD-E4EC10B18D10}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeStats.Cli", "PokeStats.Cli\PokeStats.Cli.csproj", "{8C5A883A-082E-455D-A5AF-D398E320A9CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeStats.Cli", "PokeStats.Cli\PokeStats.Cli.csproj", "{8C5A883A-082E-455D-A5AF-D398E320A9CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{300C4166-92EC-4D5F-9731-6B49309294FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300C4166-92EC-4D5F-9731-6B49309294FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300C4166-92EC-4D5F-9731-6B49309294FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{085BEB50-C88E-43D9-AFDD-E4EC10B18D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{085BEB50-C88E-43D9-AFDD-E4EC10B18D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{085BEB50-C88E-43D9-AFDD-E4EC10B18D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{085BEB50-C88E-43D9-AFDD-E4EC10B18D10}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C5A883A-082E-455D-A5AF-D398E320A9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C5A883A-082E-455D-A5AF-D398E320A9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C5A883A-082E-455D-A5AF-D398E320A9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
