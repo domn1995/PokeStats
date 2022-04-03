@@ -23,7 +23,16 @@ var pokemonResults = await input
     .Select(fetchPokemon)
     .WhenAll();
 
-pokemonResults
-    .Bind(static p => p)
+var getOutput = () => pokemonResults
+    .Map(p => 
+        p.Match(
+            Succ: pokemon => pokemon.ToString(),
+            Fail: error => error.Message
+        )
+    );
+
+var printOutput = () => getOutput()
     .ToList()
-    .ForEach(static p => Console.WriteLine(p));
+    .ForEach(Console.WriteLine);
+
+printOutput();
